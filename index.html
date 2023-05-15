@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>reveal.js</title>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+        <!-- ************************************************************************************ -->
+        <!-- first, presentation of me -->
+        <section>
+          <!-- Lidt om mig -->
+          <section>
+            <b>Anders Visti</b><br/><br/>
+            DFK, afgang 2006&nbsp;&nbsp;+<br/>
+            forlaget * [asterisk] 2002&ndash;12&nbsp;&nbsp;+<br/>
+            ‡ DobbeltDagger&nbsp;&nbsp;+<br/>
+            !=null og Code&amp;Share[&nbsp;]&nbsp;&nbsp;+<br/>
+            Interfjæs
+            <!-- <u>DFK</u>, afgang 2006.<br/>Stifter og medredaktør af <u>forlaget * [asterisk]</u> 2002&ndash;12.<br/>Stifter og redaktør af den trykte webpublikation <u>‡ DobbeltDagger</u>.<br/>Initiativtager til <u>!=null</u> og <u>Code&amp;Share</u>[&nbsp;].<br/>
+            Ejer af <u>Interfjæs</u>. -->
+          </section>        
+          <section>
+            <b>Cantina workshop</b><br/><br/>
+            Workshoppens to formål:<br/>
+            1) Prototypisk design af Cantinas nye website<br/>
+            2) Introduktion til Static Site Generators for deltagerne
+          </section>
+          <!-- <section data-background="images/DobbeltDagger1.jpg"></section> -->
+        </section>
+
+
+        <!-- ************************************************************************************ -->
+        <!-- second, presentation of me -->
+        <section>
+          <section>
+            <b>Gennemgang af softwaren vi skal bruge:</b><br/><br/>
+            Static Site Generators<br/>
+            Eleventy<br/>
+            Node.js<br/>
+            Markdown<br/>
+            Visual Studio Code
+          </section>
+          <!-- SSG -->
+          <section>
+            <b>Static Site Generators</b><br/><br/>
+            Hjemmesider kan opdeles i to kategorier: Statiske og dynamiske. Et statisk websted er designet, gemt som filer på en server og leveret til brugerens webbrowser som sitet er.
+          </section>
+          <section>
+            <img src='images/stat_dyn.png'/>
+          </section>          
+          <section>
+            <img src='images/dirty_dishes_x2.jpg'/>
+          </section>
+          <!-- Eleventy -->
+          <section>
+            <b>Eleventy</b><br/><br/>
+            Eleventy (11ty) is a Node.js based static site generator (SSG).<br/>
+            <img src="images/11ty.jpg" alt="" width='65%'>
+          </section>
+          <!-- Node.js -->
+          <section>
+            <b>Node.js</b><br/><br/>
+            Node.js er en server-side-platform bygget på Google Chrome's JavaScript Engine (V8 Engine).<br/>
+            <img src="images/nodejs.jpg" alt="" width='65%'>
+          </section>
+          <!-- Markdown -->
+          <section>
+            <b>Markdown</b><br/><br/>
+            Markdown er et let markup-sprog, som bruges til at tilføje formatering til almindelige tekstdokumenter.<br/>
+            <img src="images/markdown2.jpg" alt="" width='65%'>
+          </section>
+          <!-- Visual Studio Code -->
+          <section>
+            <b>Visual Studio Code</b><br/><br/>
+            Visual Studio Code er en freeware kode-editor lavet af Microsoft til Windows, Linux og macOS.
+          </section>
+          <!-- opsamling af alle -->
+          <section>
+            <b>Så altså, samlet ...</b><br/><br/>
+            Static Site Generators<br/>
+            Eleventy<br/>
+            Node.js<br/>
+            Markdown<br/>
+            Visual Studio Code<br/>
+            <!-- Static Site Generators <i>(Genererer statiske websites med html, css, js)</i><br/>
+            Eleventy <i>(Den SSG som vi bruger til at lave vores site med)</i><br/>
+            Node.js <i>(Den server vi installerer lokalt og som hjælper med at bygge vores site)</i><br/>
+            Markdown <i>(Det tekstformat der konverteres til html)</i><br/>
+            Visual Studio Code <i>(Den teksteditor vi skriver med)</i><br/> -->
+          </section>
+        </section>
+
+
+        <!-- ************************************************************************************ -->
+        <!-- Installation -->
+        <section>
+          <section>
+            <b>Installationer:</b><br/><br/>
+            Git bash: <a href='https://gitforwindows.org/' target='_blank'>Git for windows</a><br/>
+            (Kun for Windows. De fleste macs har allerede git installeret)<br/><br/>
+            Node.js: <a href='https://nodejs.org/en/' target='_blank'>Node.js</a><br/>
+            Visual Studio Code: <a href='https://code.visualstudio.com/' target='_blank'>Visual studio code</a><br/><br/>
+            Når alt er installeret: Åbn en terminal og skriv&nbsp;&nbsp;<code>node -v</code><br/><br/>
+            (Senere kloner vi koden: <a href='https://github.com/DobbeltDagger/Cantina_workshop' target='_blank'>Kodebase</a>)
+          </section>
+          <!-- generel terminal-brug -->
+          <section>
+            <b>Terminal (generel)</b><br/><br/>
+            <code>
+              ls<br/>
+              cd<br/>
+              code .<br/>
+            </code>
+          </section>
+          <!-- git clone -->
+          <section>
+            <b>Når vi har en god mappe (Documents, f.eks):</b><br/><br/>
+            <code>
+              git clone https://github.com/DobbeltDagger/Cantina_workshop.git<br/><br/>
+              cd Cantina_workshop<br/><br/>
+              ls
+            </code>
+          </section>          
+          <!-- Node terminal -->
+          <section>
+            <b>Terminal (node.js)</b><br/><br/>
+            <code>
+              npm install<br/>
+              npm start<br/><br/>
+              (Senere: npm run deploy)
+            </code>
+          </section>          
+        </section>
+
+        <!-- ************************************************************************************ -->
+        <!-- Hvad har vi i vores kodebase -Gå gennem Visual Studio Code -->
+        <section>
+          <!-- VSCode -åben i editor -->
+          <section>
+            <b>Projektet i VS Code</b><br/><br/>
+            <img src='../images/VScode_Codebase.png' width="80%"/>
+          </section>
+          <!-- src-mappen -->
+          <section>
+            <b>src-mappen</b><br/><br/>
+            (Start apparatet, hvis det ikke allerede kører:&nbsp;&nbsp;<code>npm start</code>)<br/><br/>
+            Anders introducerer den simple logik omkring collections<br/>
+            Vi skal kunne beskrive alt indhold som collections...
+          </section>
+        </section>
+
+
+        <!-- ************************************************************************************ -->
+        <!-- Hvad har vi i vores kodebase -Gå gennem Visual Studio Code -->
+        <section>
+          <!-- VSCode -åben i editor -->
+          <section>
+            <b>Collections / indholdstyper i Eleventy</b><br/><br/>
+            Hvad er Cantinas indhold?<br/>
+            og hvilke typer kan det inddeles i?<br/><br/>
+            Discuss ...
+          </section>
+          <!-- Hvilke sider har websitet? -->
+          <section>
+            <b>Hvilke sider har sitet?</b><br/><br/>
+            Hvilke punkter har menuen?<br/>
+            Fortæller indholdstyperne os hvad menuen indeholder?</br>
+          </section>
+          <!-- Design -->
+          <section>
+            <b>Hvordan ser sitet ud?</b><br/><br/>
+            Cantina har den særlige gul-grønne farve og den specielle font<br/>
+            Er der andre design-egenskaber, der skal fremhæves/indkorporeres?<br/><br/>
+            Lad os gennemgå de forslag deltagerne har listet ...
+          </section>
+        </section>
+
+
+        <!-- ************************************************************************************ -->
+        <!-- Ressourcer -->
+        <section>
+          <section>
+            <b>Ressourcer</b><br/><br/>
+            Coding Train (Dan Shiffman): <a href='https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw' target='_blank'>Coding Train</a><br/>
+          </section>
+        </section>
+
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
