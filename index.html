@@ -17,23 +17,12 @@
 
         <!-- ************************************************************************************ -->
         <!-- first, presentation of me -->
-        <section>
-          <!-- Lidt om mig -->
+        <section>   
           <section>
-            <b>Anders Visti</b><br/><br/>
-            DFK, afgang 2006&nbsp;&nbsp;+<br/>
-            forlaget * [asterisk] 2002&ndash;12&nbsp;&nbsp;+<br/>
-            ‡ DobbeltDagger&nbsp;&nbsp;+<br/>
-            !=null og Code&amp;Share[&nbsp;]&nbsp;&nbsp;+<br/>
-            Interfjæs
-            <!-- <u>DFK</u>, afgang 2006.<br/>Stifter og medredaktør af <u>forlaget * [asterisk]</u> 2002&ndash;12.<br/>Stifter og redaktør af den trykte webpublikation <u>‡ DobbeltDagger</u>.<br/>Initiativtager til <u>!=null</u> og <u>Code&amp;Share</u>[&nbsp;].<br/>
-            Ejer af <u>Interfjæs</u>. -->
-          </section>        
-          <section>
-            <b>Cantina workshop</b><br/><br/>
-            Workshoppens to formål:<br/>
-            1) Prototypisk design af Cantinas nye website<br/>
-            2) Introduktion til Static Site Generators for deltagerne
+            <b>Static Site Generators</b><br/><br/>
+            What we're trying to do today:<br/>
+            1) Give everyone a sense of SSGs and their core principles<br/>
+            2) Build a personal SSG site for all participants
           </section>
           <!-- <section data-background="images/DobbeltDagger1.jpg"></section> -->
         </section>
@@ -43,17 +32,18 @@
         <!-- second, presentation of me -->
         <section>
           <section>
-            <b>Gennemgang af softwaren vi skal bruge:</b><br/><br/>
+            <b>Software walk through:</b><br/><br/>
             Static Site Generators<br/>
             Eleventy<br/>
             Node.js<br/>
             Markdown<br/>
-            Visual Studio Code
+            Visual Studio Code<br/>
+            git + Gitlab Pages (devOps)
           </section>
           <!-- SSG -->
           <section>
             <b>Static Site Generators</b><br/><br/>
-            Hjemmesider kan opdeles i to kategorier: Statiske og dynamiske. Et statisk websted er designet, gemt som filer på en server og leveret til brugerens webbrowser som sitet er.
+            Websites can be separated in two categories: Static and dynamic. A static website is designed, stored as files on a server and delivered to the user's web browser as the site is.
           </section>
           <section>
             <img src='images/stat_dyn.png'/>
@@ -64,39 +54,42 @@
           <!-- Eleventy -->
           <section>
             <b>Eleventy</b><br/><br/>
-            Eleventy (11ty) is a Node.js based static site generator (SSG).<br/>
+            Eleventy (11ty) is a Node.js based static site generator<br/>
             <img src="images/11ty.jpg" alt="" width='65%'>
           </section>
           <!-- Node.js -->
           <section>
             <b>Node.js</b><br/><br/>
-            Node.js er en server-side-platform bygget på Google Chrome's JavaScript Engine (V8 Engine).<br/>
+            Node.js is a server-side platform built on Google Chrome's JavaScript Engine (V8 Engine).<br/>
+            We'll use this to compile our static code.
             <img src="images/nodejs.jpg" alt="" width='65%'>
           </section>
           <!-- Markdown -->
           <section>
             <b>Markdown</b><br/><br/>
-            Markdown er et let markup-sprog, som bruges til at tilføje formatering til almindelige tekstdokumenter.<br/>
+            Markdown is a lightweight markup language used to add formatting to plain text documents.<br/>
             <img src="images/markdown2.jpg" alt="" width='65%'>
           </section>
           <!-- Visual Studio Code -->
           <section>
             <b>Visual Studio Code</b><br/><br/>
-            Visual Studio Code er en freeware kode-editor lavet af Microsoft til Windows, Linux og macOS.
+            Visual Studio Code is a freeware code editor made by Microsoft for Windows, Linux and macOS.
           </section>
+          <!-- Visual Studio Code -->
+          <section>
+            <b>Git + Gitlab (devops)</b><br/><br/>
+            We'll use git for software versioning, and Gitlab as host for our website<br/>
+            We'll take advantage of Gitlabs' Continous Deployment functionality to build our site, as it updates.
+          </section>          
           <!-- opsamling af alle -->
           <section>
-            <b>Så altså, samlet ...</b><br/><br/>
+            <b>All in all ...</b><br/><br/>
             Static Site Generators<br/>
             Eleventy<br/>
             Node.js<br/>
             Markdown<br/>
             Visual Studio Code<br/>
-            <!-- Static Site Generators <i>(Genererer statiske websites med html, css, js)</i><br/>
-            Eleventy <i>(Den SSG som vi bruger til at lave vores site med)</i><br/>
-            Node.js <i>(Den server vi installerer lokalt og som hjælper med at bygge vores site)</i><br/>
-            Markdown <i>(Det tekstformat der konverteres til html)</i><br/>
-            Visual Studio Code <i>(Den teksteditor vi skriver med)</i><br/> -->
+            git + Gitlab Pages (devOps)
           </section>
         </section>
 
@@ -107,11 +100,11 @@
           <section>
             <b>Installationer:</b><br/><br/>
             Git bash: <a href='https://gitforwindows.org/' target='_blank'>Git for windows</a><br/>
-            (Kun for Windows. De fleste macs har allerede git installeret)<br/><br/>
+            (Just for Windows. Most macs have this)<br/><br/>
             Node.js: <a href='https://nodejs.org/en/' target='_blank'>Node.js</a><br/>
             Visual Studio Code: <a href='https://code.visualstudio.com/' target='_blank'>Visual studio code</a><br/><br/>
-            Når alt er installeret: Åbn en terminal og skriv&nbsp;&nbsp;<code>node -v</code><br/><br/>
-            (Senere kloner vi koden: <a href='https://github.com/DobbeltDagger/Cantina_workshop' target='_blank'>Kodebase</a>)
+            Once everything is installed: Open a terminal and type&nbsp;&nbsp;<code>node -v</code><br/><br/>
+            (Later we'll clone this code: <a href='#' target='_blank'>Code base</a>)
           </section>
           <!-- generel terminal-brug -->
           <section>
@@ -124,7 +117,7 @@
           </section>
           <!-- git clone -->
           <section>
-            <b>Når vi har en god mappe (Documents, f.eks):</b><br/><br/>
+            <b>Find a good place to put is (Documents, or similar):</b><br/><br/>
             <code>
               git clone https://github.com/DobbeltDagger/Cantina_workshop.git<br/><br/>
               cd Cantina_workshop<br/><br/>
@@ -137,7 +130,7 @@
             <code>
               npm install<br/>
               npm start<br/><br/>
-              (Senere: npm run deploy)
+              (Later: npm run deploy)
             </code>
           </section>          
         </section>
@@ -147,15 +140,15 @@
         <section>
           <!-- VSCode -åben i editor -->
           <section>
-            <b>Projektet i VS Code</b><br/><br/>
+            <b>The project in VS Code</b><br/><br/>
             <img src='../images/VScode_Codebase.png' width="80%"/>
           </section>
           <!-- src-mappen -->
           <section>
             <b>src-mappen</b><br/><br/>
-            (Start apparatet, hvis det ikke allerede kører:&nbsp;&nbsp;<code>npm start</code>)<br/><br/>
-            Anders introducerer den simple logik omkring collections<br/>
-            Vi skal kunne beskrive alt indhold som collections...
+            (Start the server, if it is not already running:&nbsp;&nbsp;<code>npm start</code>)<br/><br/>
+            Anders introduces the simple logic around collections<br/>
+            Let's describe most of our content as collections...
           </section>
         </section>
 
