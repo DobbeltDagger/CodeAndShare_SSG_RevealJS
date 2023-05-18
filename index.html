@@ -7,7 +7,6 @@
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
-
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
@@ -30,19 +29,18 @@
 
 
         <!-- ************************************************************************************ -->
-        <!-- second, presentation of me -->
+        <!-- Let begin ... -->
         <section>
           <section>
-            Let's start downloading! ...<br/>
-            List the downloads here! ...
-          </section>
+            <b>What we'll be using today:</b><br/><br/>
+            Eleventy.js + Node.js + Markdown + <br/>
+            Visual Studio Code + Git + Gitlab Pages (devOps)
+          </section>          
           <section>
-            <b>Software walk through:</b><br/><br/>
-            Eleventy<br/>
-            Node.js<br/>
-            Markdown<br/>
-            Visual Studio Code<br/>
-            git + Gitlab Pages (devOps)
+            <b>Let's start by downloading software ...</b><br/><br/>
+            Go to the <em>README.md</em> file of the workshop repository<br/>
+            <a href="https://gitlab.com/personal1285309/codeandshare_ssg_eleventyjs" target="_blank" style="word-break: break-all">https://gitlab.com/personal1285309/codeandshare_ssg_eleventyjs</a><br/><br/>
+            While I talk about the tech, we'll download what we need ..
           </section>
           <!-- SSG -->
           <section>
@@ -73,7 +71,7 @@
           <section>
             <b>Markdown</b><br/><br/>
             Markdown is a lightweight markup language used to add formatting to plain text documents.<br/>
-            <img src="images/markdown2.jpg" alt="" width='65%'>
+            <img src="images/markdown3.jpg" alt="" width='65%'>
           </section>
           <!-- Visual Studio Code -->
           <section>
@@ -87,12 +85,11 @@
           </section>          
           <!-- opsamling af alle -->
           <section>
-            <b>All in all ...</b><br/><br/>
-            Eleventy<br/>
-            Node.js<br/>
-            Markdown<br/>
-            Visual Studio Code<br/>
-            git + Gitlab Pages (devOps)
+            <b>Let's spend some time to get everyone ready ...</b><br/><br/>
+            Installation of Node<br/>
+            installation of Visual Studio Code<br/>
+            Installation og GitBach (only for windows)<br/>
+            Everyone sign up for Gitlab<br/>
           </section>
         </section>
 
@@ -101,17 +98,14 @@
         <!-- Installation -->
         <section>
           <section>
-            <b>Installationer:</b><br/><br/>
-            Git bash: <a href='https://gitforwindows.org/' target='_blank'>Git for windows</a><br/>
-            (Just for Windows. Most macs have this)<br/><br/>
-            Node.js: <a href='https://nodejs.org/en/' target='_blank'>Node.js</a><br/>
-            Visual Studio Code: <a href='https://code.visualstudio.com/' target='_blank'>Visual studio code</a><br/><br/>
-            Once everything is installed: Open a terminal and type&nbsp;&nbsp;<code>node -v</code><br/><br/>
-            (Later we'll clone this code: <a href='#' target='_blank'>Code base</a>)
+            <b>When ready ...</b><br/><br/>
+            When all is installed: Open a terminal and type&nbsp;<br/>
+            <code>node -v</code><br/><br/>
+            (Later we'll clone this code: <a href='https://gitlab.com/personal1285309/codeandshare_ssg_eleventyjs' target='_blank' style="word-break: break-all">https://gitlab.com/personal1285309/codeandshare_ssg_eleventyjs</a>)
           </section>
           <!-- generel terminal-brug -->
           <section>
-            <b>Terminal (general)</b><br/><br/>
+            <b>Terminal (general commands)</b><br/><br/>
             <code>
               ls<br/>
               cd<br/>
@@ -120,20 +114,25 @@
           </section>
           <!-- git clone -->
           <section>
-            <b>Find a good place to put the code (Documents, or similar):</b><br/><br/>
+            <b>Find a good place to put the code<br/>(Documents folder, or similar):</b><br/><br/>
             <code>
-              git clone<br/>https://github.com/DobbeltDagger/Cantina_workshop.git<br/><br/>
-              cd Cantina_workshop<br/><br/>
+              git clone<br/><span style="word-break: break-all">https://gitlab.com/personal1285309/codeandshare_ssg_eleventyjs<br/><br/>
+              cd codeandshare_ssg_eleventyjs<br/><br/>
               ls
             </code>
-          </section>          
+          </section>
+          <!-- WE MIGHT NEED ACCESS TOKEN -->
+          <section>
+            <b>We'll need a Personal Access Token for Gitlab</b><br/><br/>
+            Login to your Gitlab account. Go to account preferences. Go to Choose Access Token .. and generate a new token<br/><br/>
+            Now we can clone the repo ..
+          </section> 
           <!-- Node terminal -->
           <section>
             <b>Terminal (node.js)</b><br/><br/>
             <code>
               npm install<br/>
-              npm start<br/><br/>
-              (Later: npm run deploy)
+              npm start<br/>
             </code>
           </section>          
         </section>
@@ -161,25 +160,51 @@
         <section>
           <!-- VSCode -åben i editor -->
           <section>
-            <b>Collections / indholdstyper i Eleventy</b><br/><br/>
-            Hvad er Cantinas indhold?<br/>
-            og hvilke typer kan det inddeles i?<br/><br/>
-            Discuss ...
+            <b>Collections / content types in Eleventy.js</b><br/><br/>
+            What is the content? -and what types can it be divided into?<br/><br/>
+            Let's discuss ...
           </section>
           <!-- Hvilke sider har websitet? -->
           <section>
-            <b>Hvilke sider har sitet?</b><br/><br/>
-            Hvilke punkter har menuen?<br/>
-            Fortæller indholdstyperne os hvad menuen indeholder?</br>
+            <b>What pages does the site have?</b><br/><br/>
+            Hvilke menu items do we have?<br/>
+            How is the content types related to the menu?</br>
           </section>
           <!-- Design -->
           <section>
-            <b>Hvordan ser sitet ud?</b><br/><br/>
-            Cantina har den særlige gul-grønne farve og den specielle font<br/>
-            Er der andre design-egenskaber, der skal fremhæves/indkorporeres?<br/><br/>
-            Lad os gennemgå de forslag deltagerne har listet ...
+            <b>Remarks on design?</b><br/><br/>
+            The site is minimalist in terms of design. This is typically a good starting point for a more distinct design of your choice. Let's look at the css together...
+          </section>
+          <section>
+            <b>Hack away ...</b><br/><br/>
+            Add some content the site, change pages, tweak the css ...
+          </section>          
+        </section>
+
+
+        <!-- Git lab remote setup -->
+        <section>
+          <section>
+            <b>Git</b><br/><br/>
+            Let's connect our site to the gitlab repo.<br/>
+            <code>git init</code><br/>
+            Go to your gitlab account, and make a "new project" ..
+          </section>
+          <!-- connect to the repo -->
+          <section>
+            <b>Git, connect to remote</b><br/><br/>
+            <code>git remote add origin "The name of your repo"</code><br/><br/>
+            <code>git remote -v</code>
+          </section>
+          <section>
+            <b>Git, connect to remote #2</b><br/><br/>
+            <code>git add .</code><br/><br/>
+            <code>git commit -m "initial"</code>
+            <code>git branch -M main</code>
+            <code>git push -u origin main</code>
           </section>
         </section>
+
 
 
         <!-- ************************************************************************************ -->
